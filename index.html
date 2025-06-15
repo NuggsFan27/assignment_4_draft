@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RunTogether DMV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="form.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="index.html" class="brand">RunTogether DMV</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="dc.html">DC</a></li>
+        <li><a href="md.html">MD</a></li>
+        <li><a href="va.html">VA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero / title banner -->
+  <figure class="hero">
+    <img src="memorial_bridge.jpg" alt="Runners crossing the Arlington Memorial Bridge at sunrise">
+    <figcaption>Your one-stop directory for DMV run clubs</figcaption>
+  </figure>
+
+  <main>
+
+    <!-- About section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        RunTogether DMV helps runners of all paces discover welcoming run clubs in
+        Washington DC, suburban Maryland, and Northern Virginia. Use our simple
+        state toggle to browse club schedules, meeting spots, and pace ranges,
+        then reach out to organizers directly—all in one place.
+      </p>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm" action="#" method="post">
+          <fieldset>
+            <legend>Get in touch</legend>
+      
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+      
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="phone">Phone&nbsp;(optional)</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9\-+\s()]{7,}">
+      
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+
+  </main>
+
+  <footer>
+    <small>&copy; 2025 RunTogether DMV. All rights reserved.</small>
+  </footer>
+
+</body>
+</html>
