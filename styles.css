@@ -208,3 +208,63 @@ footer {
       height: auto;        /* preserves aspect ratio */
     }
   }
+
+  .state-banner {
+    max-width: 840px;
+    margin: 1rem auto;
+    background: #0a5c9d;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 6px;
+  }
+  .state-banner h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  /* Placeholder / hero-style state image */
+  .state-image {
+    max-width: 840px;
+    margin: 0 auto 1.5rem;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .state-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Run-club cards layout */
+  .run-clubs {
+    display: grid;
+    gap: 1rem;
+  }
+  .run-card {
+    background: #fafafa;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+  }
+  .run-card h2 {
+    margin-top: 0;
+    font-size: 1.15rem;
+  }
+  
+  /* Responsive: 2-up at tablet, 3-up at desktop */
+  @media (min-width: 600px) {
+    .run-clubs {
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .state-banner,
+    .state-image,
+    main,
+    footer {
+      max-width: 1200px;
+    }
+  }
