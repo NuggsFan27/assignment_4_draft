@@ -1,19 +1,12 @@
-const form = document.getElementById('contactForm');
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contactForm');
 
-  form.addEventListener('submit', function(event) {
-    // Stop the browser from reloading the page
-    event.preventDefault();
+  form.addEventListener('submit', e => {
+    e.preventDefault();                       // 1. stop the network request
 
-    // Read the user's name (optional—customize your message)
-    const userName = form.name.value.trim();
+    const name = form.name.value.trim();
+    alert(`Thanks${name ? ', ' + name : ''}! Your message is on its way.`); // 2. feedback
 
-    // Show a thank-you alert
-    if (userName) {
-      alert(`Thanks for reaching out, ${userName}! We’ll be in touch soon.`);
-    } else {
-      alert('Thanks for reaching out! We’ll be in touch soon.');
-    }
-
-    // Clear all the inputs back to their default values
-    form.reset();
+    form.reset();                             // 3. clear every field
   });
+});
