@@ -209,7 +209,7 @@ footer {
     }
   }
 
-  .state-banner, .site-banner {
+  .state-banner {
     max-width: 840px;
     margin: 1rem auto;
     background: #0a5c9d;
@@ -218,11 +218,25 @@ footer {
     padding: 2rem 1rem;
     border-radius: 6px;
   }
-  .state-banner, .site-banner h1 {
+  .state-banner h1 {
     margin: 0;
     font-size: 2rem;
   }
-  
+
+
+.site-banner {
+    max-width: 840px;
+    margin: 1rem auto;
+    background: #0a5c9d;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 6px;
+}
+.site-banner {
+  margin: 0;
+  font-size: 2rem;
+}
   /* Placeholder / hero-style state image */
   .state-image {
     max-width: 840px;
