@@ -60,12 +60,11 @@ header {
   color: #222;
 }
 
-/* HERO – shorter for mobile */
 
 figure.hero, main, footer {
-  max-width: 840px;             /* or whatever your desktop max-width is */
-  margin: 0 auto;               /* centers each block */
-  background-color: #fafafa;    /* white content background */
+  max-width: 840px;             
+  margin: 0 auto;               
+  background-color: #fafafa;   
 }
 
 figure.hero img {
@@ -112,7 +111,7 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
-/* CONTACT FORM – inputs full width */
+
 form {
   display: grid;
   gap: 1rem;
@@ -167,14 +166,12 @@ footer {
     padding: 1rem 0;   
 }
 
-/* === WIDER SCREENS (TABLETS & UP) === */
 
 @media (min-width: 600px) {
   body {
     padding: 2rem;
   }
 
-  /* a little taller hero */
   .hero img {
     height: 260px;
   }
@@ -188,7 +185,6 @@ footer {
     margin: 0 auto;
   }
 
-  /* nav links more spacious */
   .nav-list {
     justify-content: center;
     gap: 1rem;
@@ -196,16 +192,15 @@ footer {
 }
 
 @media (min-width: 900px) {
-    /* Make the hero container and footer expand */
+    
     figure.hero, main, footer {
-      max-width: 1200px;   /* or use 100% for truly full-bleed */
-      margin: 0 auto;      /* keep them centered */
+      max-width: 1200px;   
+      margin: 0 auto;      
     }
-  
-    /* Ensure the hero image fills its now-wider container */
+   
     figure.hero img {
       width: 100%;
-      height: auto;        /* preserves aspect ratio */
+      height: auto;        
     }
   }
 
@@ -237,7 +232,7 @@ footer {
   align-items: center;
   justify-content: center;
 }
-  /* Placeholder / hero-style state image */
+
   .state-image {
     max-width: 840px;
     margin: 0 auto 1.5rem;
@@ -251,23 +246,30 @@ footer {
     object-fit: cover;
   }
   
-  /* Run-club cards layout */
+ 
   .run-clubs {
     display: grid;
     gap: 1rem;
   }
   .run-card {
-    background: #fafafa;
+    background: #fff;               
+    border-radius: 8px;            
     padding: 1rem;
-    border-radius: 6px;
-    box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;           
   }
+
+  .run-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    background-color: #f9f9f9;     
+  }
+
   .run-card h2 {
     margin-top: 0;
     font-size: 1.15rem;
   }
   
-  /* Responsive: 2-up at tablet, 3-up at desktop */
   @media (min-width: 600px) {
     .run-clubs {
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
